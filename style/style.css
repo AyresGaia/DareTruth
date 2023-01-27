@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: scroll;
+    background-color: rgb(1, 1, 60);
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    color: rgb(6, 109, 165);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3vw;
+    padding: 30px;
+    justify-content: space-around;
+    background-color: rgb(1, 1, 60);
+}
+
+.item{
+    display: inline;
+    width: 45vw;
+    min-width: 250px;
+    min-height: 230px;
+    background-color: rgb(4, 4, 117);
+}
+
+
+
+
+.head{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(8, 134, 202);
+    background-color: rgb(3, 3, 83);
+}
+
+.content{
+    padding: 15px;
+    text-align: justify;
+    color: rgb(2, 166, 255);
+    font-family: 'Noto Serif', serif;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+} 
