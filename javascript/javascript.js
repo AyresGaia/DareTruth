@@ -3,6 +3,18 @@ var Dare2=document.getElementById('content3');
 var Truth2=document.getElementById('content1');
 var Truth1=document.getElementById('content4');
 
+var container=document.getElementById("container");
+
+var agree=document.getElementById("Rules");
+var btn=document.getElementById("agree");
+var Rules=document.getElementById("Help");
+
+var mode=document.getElementById("mode");
+var link=document.createElement("link");
+link.href="style/style2.css";
+link.type = "text/css";
+link.rel="stylesheet";
+
 
 
 function getTruth1(){
@@ -54,4 +66,24 @@ function getQuest(){
   getTruth2();
 }
 
-document.addEventListener("dblclick",getQuest);
+function agreement_open(){
+  agree.style.display="block";
+}
+
+
+function agreement_close(){
+  agree.style.display="none";
+}
+
+function add_mode1(){
+    document.head.appendChild(link);
+    alert("Website is still in construction");
+}
+
+
+Rules.onclick=agreement_open;
+btn.onclick=agreement_close;
+
+mode.onclick=add_mode1;
+
+container.addEventListener("dblclick",getQuest);
