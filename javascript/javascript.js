@@ -3,6 +3,13 @@ var Dare2=document.getElementById('content3');
 var Truth2=document.getElementById('content1');
 var Truth1=document.getElementById('content4');
 
+var D1=document.getElementById('i2');
+var D2=document.getElementById('i3');
+var T2=document.getElementById('i1');
+var T1=document.getElementById('i4');
+var all_DT=document.getElementsByClassName('item');
+const quest=[D1,D2,T1,T2];
+
 var container=document.getElementById("container");
 
 var agree=document.getElementById("Rules");
@@ -64,6 +71,11 @@ function getQuest(){
   getDare2();
   getTruth1();
   getTruth2();
+  for (var i = 0; i < quest.length; i++) {
+    quest[i].style.boxShadow = "5px 10px 10px 10px black";
+  }
+  const RElement = quest[Math.floor(Math.random() * quest.length)];
+  RElement.style.boxShadow="5px 10px 10px 10px blue";
 }
 
 function agreement_open(){
