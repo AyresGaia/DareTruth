@@ -76,6 +76,7 @@ function getQuest(){
   }
   const RElement = quest[Math.floor(Math.random() * quest.length)];
   RElement.style.boxShadow="5px 10px 10px 10px blue";
+  RElement.scrollIntoView({behavior:"smooth"});
 }
 
 function agreement_open(){
