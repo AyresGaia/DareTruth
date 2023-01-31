@@ -76,7 +76,10 @@ function getQuest(){
   }
   const RElement = quest[Math.floor(Math.random() * quest.length)];
   RElement.style.boxShadow="5px 10px 10px 10px blue";
-  RElement.scrollIntoView({behavior:"smooth"});
+  const viewportHeight = window.innerHeight;
+  const elementHeight = RElement.offsetHeight;
+  const scrollY = RElement.offsetTop - (viewportHeight - elementHeight) / 2;
+  window.scrollTo({top: scrollY, behavior: "smooth"});
 }
 
 function agreement_open(){
